@@ -2,6 +2,9 @@
 
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS-blue.svg)]()
+[![C++](https://img.shields.io/badge/C%2B%2B-17-blue.svg)]()
+[![JUCE](https://img.shields.io/badge/JUCE-7.0-orange.svg)](https://juce.com/)
+[![Status](https://img.shields.io/badge/status-source%20code-yellow.svg)]()
 
 A vintage-style audio effect plugin that simulates the warm, imperfect sound of analog cassette tapes. Built with **JUCE** and **C++**.
 
@@ -24,28 +27,20 @@ A vintage-style audio effect plugin that simulates the warm, imperfect sound of 
 - Vintage sound design
 - Adding warmth to digital recordings
 
-## 🚀 Installation
+## 🛠️ Building from Source
 
-### Building from Source
+### Prerequisites
 
-#### Prerequisites
-- CMake 3.15+
-- C++17 Compiler (MSVC, Clang, GCC)
-- JUCE Framework
+| Tool | Version | Link |
+|------|---------|------|
+| CMake | 3.15+ | [cmake.org](https://cmake.org/download/) |
+| C++ Compiler | C++17 | [Visual Studio 2022](https://visualstudio.microsoft.com/) / [Xcode](https://developer.apple.com/xcode/) |
+| JUCE Framework | 7.0+ | [juce.com](https://juce.com/) |
 
-#### Steps
+> ⚠️ **Важно:** Папка `JUCE` **не включена** в репозиторий (см. `.gitignore`). Её нужно скачать отдельно перед сборкой.
+
+### Шаг 1. Клонируй проект
+
 ```bash
-# Clone the repository
 git clone https://github.com/Hunterice348/Lo-Fi-Tape-Simulator.git
 cd Lo-Fi-Tape-Simulator
-
-# Download JUCE
-git clone https://github.com/juce-framework/JUCE.git
-
-# Build (Windows)
-cmake -B build -G "Visual Studio 17 2022" -A x64
-cmake --build build --config Release
-
-# Build (macOS)
-cmake -B build -G Xcode
-cmake --build build --config Release
