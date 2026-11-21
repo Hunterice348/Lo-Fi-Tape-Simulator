@@ -1,0 +1,20 @@
+# Build folders
+build/
+Binaries/
+JuceLibraryCode/
+
+# IDE files
+.vs/
+.vscode/
+*.sln
+*.vcxproj
+*.xcworkspace/
+*.xcodeproj/
+*.user
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# JUCE specific
+JUCE/modules/juce_audio_processors/format_types/VST3_SDK/
